@@ -1,0 +1,5 @@
+spec:
+  selector:
+    app: coinbase
+    color: blue   # This will switch to green later
+
