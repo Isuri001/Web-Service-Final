@@ -1,0 +1,21 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: coinbase-test
+  namespace: test
+spec:
+  replicas: 2
+  selector:
+    matchLabels:
+      app: coinbase
+  template:
+    metadata:
+      labels:
+        app: coinbase
+  spec:
+    containers:
+      - name: coinbase-app
+        image: yourdockerhub/coinbase-app:latest
+        ports:
+          - containerPort: 5000
+
