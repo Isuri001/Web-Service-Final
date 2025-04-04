@@ -1,0 +1,13 @@
+metadata:
+  name: coinbase-green
+spec:
+  selector:
+    matchLabels:
+      app: coinbase
+      color: green
+  template:
+    metadata:
+      labels:
+        app: coinbase
+        color: green
+
