@@ -1,0 +1,13 @@
+metadata:
+  name: coinbase-blue
+spec:
+  selector:
+    matchLabels:
+      app: coinbase
+      color: blue
+  template:
+    metadata:
+      labels:
+        app: coinbase
+        color: blue
+
