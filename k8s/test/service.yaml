@@ -1,0 +1,13 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: coinbase-service-test
+spec:
+  selector:
+    app: coinbase
+    env: test
+  ports:
+    - port: 80
+      targetPort: 5000
+  type: LoadBalancer
+
