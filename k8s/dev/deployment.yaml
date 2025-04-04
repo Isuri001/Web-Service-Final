@@ -14,7 +14,7 @@ spec:
     spec:
       containers:
         - name: coinbase-app
-          image: your-dockerhub/coinbase-app:latest
+          image: isuri2001/coinbase-app:latest
           ports:
             - containerPort: 5000
 
