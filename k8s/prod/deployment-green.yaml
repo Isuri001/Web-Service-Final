@@ -16,6 +16,6 @@ spec:
     spec:
       containers:
         - name: coinbase
-          image: isuri001/coinbase-service 
+          image: isuri2001/coinbase-service:latest
           ports:
             - containerPort: 80
