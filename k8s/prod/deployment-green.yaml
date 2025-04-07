@@ -1,6 +1,9 @@
+apiVersion: apps/v1
+kind: Deployment
 metadata:
   name: coinbase-green
 spec:
+  replicas: 1
   selector:
     matchLabels:
       app: coinbase
@@ -10,4 +13,9 @@ spec:
       labels:
         app: coinbase
         color: green
-
+    spec:
+      containers:
+        - name: coinbase
+          image: isuri001/coinbase-service 
+          ports:
+            - containerPort: 80
